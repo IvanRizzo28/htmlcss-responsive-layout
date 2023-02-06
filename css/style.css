@@ -23,6 +23,14 @@ root
     color: var(--color-1);
 }
 
+.color-3{
+    color: var(--color-3);
+}
+
+.color-5{
+    color: var(--color-5);
+}
+
 /*----------------------------*/
 
 body{
@@ -69,6 +77,8 @@ header nav{
 main
 */
 
+/*infromazioni*/
+
 #informazioni .box{
     background-color: var(--color-2);
 }
@@ -82,6 +92,102 @@ main
         width: calc( (100% / 3) * 2);
     }
 
+    .self{
+        align-self: flex-end;
+    }
+
+}
+
+/*planning*/
+
+#planning{
+    background-color: var(--color-3);
+}
+
+#planning .container{
+    align-items: flex-end;
+}
+
+#planning img{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#planning h2{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+#planning .box{
+    background-color: var(--color-5);
+    margin-top: 20px;
+    color: #000;
+    border-radius: 40px;
+}
+
+#planning .box img{
+    max-width: 300px;
+    margin: 0 auto 40px auto;
+}
+
+@media screen and (min-width: 768px){
+    #planning h2{
+        font-size: 40px;
+    }
+}
+
+/*testimonial*/
+
+#testimonial{
+    text-align: center;
+}
+
+#testimonial h1{
+    font-size: 16px;
+    color: var(--color-4);
+    margin-bottom: 20px;
+}
+
+#testimonial h2{
+    font-size: 24px;
+}
+
+#testimonial p{
+    margin-bottom: 20px;
+}
+
+#testimonial .box{
+    background-color: var(--color-3);
+}
+
+#testimonial .flex.column{
+    flex-direction: column;
+    gap: 20px;
+}
+
+#testimonial .flex.column .box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-5);
+}
+
+#testimonial .flex.column .box p i{
+    font-size: 30px;
+}
+
+#testimonial .flex.column .box img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px){
+    #testimonial .flex.column .box{
+        flex-direction: row;
+    }
 }
 
 /*
