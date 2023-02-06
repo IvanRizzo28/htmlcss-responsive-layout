@@ -1,4 +1,16 @@
 /*
+root
+*/
+
+:root{
+    --color-1: #0084FD;
+    --color-2: #B5DDFF;
+    --color-3: #9792E4;
+    --color-4: #333333;
+    --color-5: #fff;
+}
+
+/*
 tipi
 */
 
@@ -11,13 +23,34 @@ ul{
     list-style: none;
 }
 
+h1{
+    font-size: 25px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+p{
+    line-height: 1.8;
+    font-size: 16px;
+}
+
 /*
 contenitori
 */
 
+section{
+    padding: 40px 0;
+}
+
 .container{
     margin: 0 auto;
-    width: 95%;
+    width: 90%;
 }
 
 .flex{
@@ -28,13 +61,24 @@ contenitori
     justify-content: space-between;
 }
 
+.flex.j-center{
+    justify-content: center;
+}
+
 .flex.align-center{
     align-items: center;
 }
 
+.flex.column{
+    flex-direction: column;
+}
+
 /* tablet */
 @media screen and (min-width: 768px){
-    
+    .flex.column{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 /* desktop */
@@ -42,6 +86,49 @@ contenitori
     .container{
         max-width: 1140px;
     }
+}
+
+/*
+box
+*/
+
+.box{
+    padding: 20px;
+    text-align: center;
+}
+
+.box .box-i{
+    font-size: 60px;
+    margin: 15px 0;
+}
+
+.box img{
+    width: 100%;
+    display: block;
+}
+
+.box h2{
+    margin-bottom: 20px;
+}
+
+.box.primary{
+    border-radius: 20px;
+}
+
+.box-container{
+    width: 100%;
+    padding: 10px;
+}
+
+.flex.column .box{
+    width: 100%;
+}
+
+/* tablet */
+@media screen and (min-width: 768px){
+    .box-container{
+        width: calc(100% / 3);
+    }   
 }
 
 /*
@@ -53,4 +140,31 @@ bottoni
     padding: 5px 15px;
     background-color: #fff;
     border-radius: 30px;
+    text-align: center;
+}
+
+.btn.btn2{
+    color: #fff;
+    display: block;
+    width: 70%;
+    background-color: var(--color-1);
+    margin: 40px 0;
+}
+
+/*
+margini, width, ecc....
+*/
+
+.text-sinistra{
+    text-align: left;
+}
+
+@media screen and (min-width: 768px){
+    .desktop-w-60{
+        width: 60%;
+    }
+
+    .desktop-w-40{
+        width: 40%;
+    }
 }
