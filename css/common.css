@@ -24,21 +24,23 @@ ul{
 }
 
 h1{
-    font-size: 25px;
+    font-size: 30px;
 }
 
 h2{
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
 h3{
-    font-size: 16px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 p{
     line-height: 1.8;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 /*
@@ -153,6 +155,14 @@ bottoni
     margin: 40px 0;
 }
 
+.btn.btn3{
+    background-color: var(--color-3);
+    color: var(--color-5);
+    margin: 20px 0;
+    display: block;
+    width: 50%;
+}
+
 .btn-circle{
     display: block;
     width: 50px;
@@ -177,6 +187,14 @@ margini, width, ecc....
 
     .desktop-w-40{
         width: 40%;
+    }
+
+    .desktop-w-70{
+        width: 70%;
+    }
+
+    .desktop-w-25{
+        width: 25%;
     }
 }
 

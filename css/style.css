@@ -95,7 +95,6 @@ main
     .self{
         align-self: flex-end;
     }
-
 }
 
 /*planning*/
@@ -106,6 +105,12 @@ main
 
 #planning .container{
     align-items: flex-end;
+}
+
+#planning .img{
+    display: block;
+    width: 90%;
+    margin: 0 auto 40px auto;
 }
 
 #planning img{
@@ -133,6 +138,12 @@ main
 @media screen and (min-width: 768px){
     #planning h2{
         font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #planning h2{
+        font-size: 25px;
     }
 }
 
@@ -190,6 +201,127 @@ main
     }
 }
 
+/*benefit*/
+#benefit{
+    background-color: var(--color-3);
+}
+
+#benefit h1{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#benefit h2{
+    font-size: 38px;
+}
+
+#benefit .box{
+    background-color: var(--color-5);
+    text-align: left;
+}
+
+/*about*/
+#about p{
+    margin-bottom: 40px;
+}
+
+#about img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#about .btn.btn3{
+    width: 60%;
+}
+
+.relative{
+    position: relative;
+    width: 150px;
+}
+
+.relative i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--color-3);
+    font-size: 45px;
+}
+
+@media screen and (min-width: 768px){
+    #about .btn.btn3{
+        width: 100%;
+    }
+
+    #about .container.flex.column{
+        justify-content: space-between;
+    }
+}
+
+/*pre-footer*/
+
+#pre-footer{
+    background-color: var(--color-3);
+    text-align: center;
+}
+
+#pre-footer span{
+    margin-bottom: 20px;
+    display: block;
+}
+
+#pre-footer h1{
+    font-size: 45px;
+    color: #FDC15F;
+    margin-bottom: 20px;
+}
+
+#pre-footer .btn{
+    color: var(--color-3);
+    padding: 15px 0;
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.policy{
+    text-decoration: underline;
+}
+
+.copyright{
+    font-size: 14px;
+}
+
+@media screen and (min-width: 768px){
+    #pre-footer .container{
+        max-width: 800px;
+    }
+}
+
 /*
 footer
 */
+
+footer{
+    padding: 40px 0;
+    background-color: var(--color-4);
+    text-align: center;
+}
+
+footer p:first-child{
+    margin-bottom: 40px;
+}
+
+footer span{
+    color: var(--color-3);
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px){
+    footer .container{
+        max-width: 800px;
+    }
+}
