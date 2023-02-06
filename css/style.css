@@ -1,0 +1,54 @@
+/*
+reset
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+root
+*/
+:root{
+    --color-1: #0084FD;
+    --color-2: #B5DDFF;
+    --color-3: #9792E4;
+    --color-4: #333333;
+    --color-5: #fff;
+}
+
+/*----------------------------*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*------------------------------*/
+
+/*
+header
+*/
+
+header{
+    padding: 10px;
+    background-color: var(--color-1);
+    color: var(--color-5);
+}
+
+.logo{
+    font-size: 20px;
+}
+
+header i{
+    font-size: 20px;
+}
+
+/*
+main
+*/
+
+/*
+footer
+*/
